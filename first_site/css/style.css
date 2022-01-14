@@ -1,0 +1,31 @@
+@font-face{
+    font-family: "Yolk1";
+    src: url("./fonts/Comfortaa-Bold.woff") format("woff");
+    font-weight: bold;
+}
+@font-face{
+    font-family: "Yolk2";
+    src: url("./fonts/Comfortaa-Light.ttf") format("ttf");
+}
+@font-face{
+    font-family: "Yolk3";
+    src: url("./fonts/Comfortaa-Regular.ttf") format("ttf");
+}
+
+:root{
+    --color01: #FFFFFF;
+    --color02: #FBF37C;
+    --color03: #7F7F7F;
+    --color04: #58555A;
+    --color05: #000000;
+
+    --standart: Arial, Helvetica, sans-serif;
+    --yBold: "Yolk1", oblique;
+    --yLight: "Yolk2", serif;
+    --yRegular: "Yolk3", Arial;
+}
+
+body{
+    background-color: var(--color02);
+    font-family: var(--yBold);
+}
