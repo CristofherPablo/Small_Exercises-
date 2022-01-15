@@ -1,16 +1,4 @@
-@font-face{
-    font-family: "Yolk1";
-    src: url("./fonts/Comfortaa-Bold.woff") format("woff");
-    font-weight: bold;
-}
-@font-face{
-    font-family: "Yolk2";
-    src: url("./fonts/Comfortaa-Light.ttf") format("ttf");
-}
-@font-face{
-    font-family: "Yolk3";
-    src: url("./fonts/Comfortaa-Regular.ttf") format("ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@700&display=swap');
 
 :root{
     --color01: #FFFFFF;
@@ -20,9 +8,7 @@
     --color05: #000000;
 
     --standart: Arial, Helvetica, sans-serif;
-    --yBold: "Yolk1", oblique;
-    --yLight: "Yolk2", serif;
-    --yRegular: "Yolk3", Arial;
+    --yBold: 'Comfortaa', cursive;
 }
 
 body{
