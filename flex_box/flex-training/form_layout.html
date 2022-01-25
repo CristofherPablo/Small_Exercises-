@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-image: url(pictures/Choi.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            width: 800px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .container .data {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container .data .msg-area {
+            display: flex;
+            flex-direction: column;
+            order: 2;
+        }
+
+        .container .data .msg-area > textarea {
+            flex: 1;
+            min-width: 18em;
+            background: transparent;
+            color: white;
+        }
+
+            .container .data .datails-area {
+                flex: 1;
+                order: 1;
+                color: #fff;
+                padding: 15px;
+            }
+
+            .container .data .datails-area input {
+                width: 100%;
+            }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <form action="" class="data">
+            <div class="msg-area">
+                <label for="msg">Message</label>
+                <textarea  id="msg" ></textarea>             
+            </div>
+            <div class="datails-area">
+                <label for="name">First Name</label>
+                <input type="text" id="name">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname">
+
+                <label for="email">Email</label>
+                <input type="text" id="email">
+
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Tables</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: flex;
+            padding: 16px;
+        }
+
+        .container .single-container {
+            flex: 1;
+            width: 0;
+        }
+
+        .container .single-container:not(:last-child) {
+            margin-right: 16px;
+        }
+
+        .container .single-container .deals {
+            list-style-type: none;
+            border: 1px solid lightgrey;
+            margin: 0;
+            padding: 0;
+            transition: .5s;
+        }
+        .container .single-container .deals:hover {
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+        }
+
+        .container .single-container .deals .title {
+            background-color: #0e908f;
+            color: white;
+            font-size: 24px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .container .single-container .deals li {
+            text-align: center;
+            padding: 20px;
+            background-color: #262626;
+            color: white;
+            border: 1px solid lightgrey;
+        }
+
+        .container .single-container .deals .diferent-color {
+            background-color: #4ecaac;
+        }
+
+        .container .single-container:hover .deals .diferent-color {
+            background-color: #f36b4f;
+            transition: .9s;
+        }
+
+        .container .single-container:hover .deals .title {
+            background-color: #f12e07;
+            transition: .9s;
+        }
+
+        button {
+            background-color: #262626;
+            border: none;
+            border-radius: 25px;
+            color: #fff;
+            cursor: pointer;
+            padding: 12px 70px;
+            font-size: 16px;
+        }
+
+        @media only screen and (max-width: 775px) {
+            .container {
+                flex-wrap: wrap;
+            }
+            .container .single-container {
+                flex: 0 0 100%;
+                margin-bottom: 16px;
+                width: 100%;
+            }
+
+            .container .single-container .deals:hover {
+                transform: none;
+                box-shadow: none;
+            }
+            
+            button {
+                padding: 12px 24px;
+
+            }
+        }
+
+        @media only screen and (max-width: 7) and (max-width: 991px) {
+            button {
+                padding: 12px 60px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="single-container">
+            <ul class="deals">
+                <li class="title">Standard</li>
+                <li class="diferent-color">30$ / Month</li>
+                <li>20gb Storage</li>
+                <li>100 Domains</li>
+                <li>1000 Email Accounts</li>
+                <li class="diferent-color"><button>Sign up</button></li>
+            </ul>
+        </div>
+
+        <div class="single-container">
+            <ul class="deals">
+                <li class="title">Standard</li>
+                <li class="diferent-color">30$ / Month</li>
+                <li>20gb Storage</li>
+                <li>100 Domains</li>
+                <li>1000 Email Accounts</li>
+                <li class="diferent-color"><button>Sign up</button></li>
+            </ul>
+        </div>
+
+        <div class="single-container">
+            <ul class="deals">
+                <li class="title">Standard</li>
+                <li class="diferent-color">30$ / Month</li>
+                <li>20gb Storage</li>
+                <li>100 Domains</li>
+                <li>1000 Email Accounts</li>
+                <li class="diferent-color"><button>Sign up</button></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
