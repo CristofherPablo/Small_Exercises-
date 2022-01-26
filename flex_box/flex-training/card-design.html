@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Card Design</title>
+
+    <style>
+        body {
+           background-color: #f1f1f1;
+           font-family: monospace;
+        }
+
+        .container {
+            display: flex;
+            display: row;
+            max-width: 450px;
+            margin: 10% auto;
+            background-color: #fff;
+            box-shadow: 0 0 8px rgba(0,0,0,0.3);
+            border-radius: 2px;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .container:hover .sin-img {
+        transform: scale(1.1);
+        }
+
+        .container .sin-img {
+            background-image: url(pictures/irina-blok-pq.jpg);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            -webkit-background-size: cover;
+            background-size: cover;
+            background-position: center;
+            transition: 0.9s;
+            
+        }
+
+        .container .img{
+            position: relative;
+            z-index: 0;
+            height: 200px;
+            flex-basis: 50%;
+            height: auto;
+        }
+
+        .container .img-text {
+            padding: 1em;
+            background-color: #fff;
+            position: relative;
+            z-index: 1;
+            flex-basis: 60%;
+        }
+
+        .container .img-text h1 {
+            line-height: 1;
+            margin: 0;
+            font-size: 1.6rem;
+        }
+
+        .container .img-text h2 {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: tomato;
+            margin-top: 10px;
+        }        
+
+        .container .img-text::before {
+            transform: skew(4deg);
+            content: ' ';
+            background-color: #fff;
+            width: 30px;
+            position: absolute;
+            left: -10px;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="container">
+        <div class="img">
+            <div class="sin-img"></div>
+        </div>
+        <div class="img-text">
+            <h1>Megan Fox</h1>
+            <h2>Web Developer</h2>
+            <p>Cillum incididunt deserunt voluptate occaecat deserunt culpa.
+                Cillum incididunt deserunt voluptate occaecat deserunt culpa
+                Cillum incididunt deserunt voluptate occaecat deserunt culpa
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest"></i>
+                <i class="fa fa-instagram"></i>
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

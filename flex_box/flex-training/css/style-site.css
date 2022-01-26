@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+}
+
+.container header {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.container header .navbar {
+    background-color: tomato;
+    padding: 15px 0;
+}
+
+.container header .navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container header .logo {
+    font-size: 35px;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .content-area {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .content-area .single-content .img,
+.container .content-area .sidebar .single-sidebar img {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container .content-area .single-content .content-text {
+    padding: 16px;
+}
+
+.container .content-area .single-content .content-text h2{
+    margin: 0 0 15px 0;
+}
+
+.container .content-area .single-content {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    background-color: #fff;
+}
+
+.container .content-area .sidebar{
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.container .content-area .sidebar .single-sidebar h2 {
+    margin: 0 0 15px 0;
+}
+ footer {
+     background-color: #000;
+     color: #fff;
+     box-sizing: border-box;
+     text-align: center;
+     padding: 25px 0;
+ }
+
+ /* Media Queries*/
+
+ @media screen and (min-width: 850px) {
+
+    .container {
+        flex-wrap: wrap;
+    }
+    .container .content-area {
+        box-sizing: border-box;
+        flex: 3;
+        margin: 15px;
+    }
+
+    .container .content-area .sidebar {
+        box-sizing: border-box;
+        flex: 1;
+    }
+
+    .container .content-area .full-width {
+        width: 100%;
+    }
+    .container .content-area .one-half {
+        flex: 2;
+    }
+    .container .content-area .one-third {
+        flex: 3;
+    }
+ }
+
+ @media screen and (min-width: 501px) and (max-width:850 ){
+    .container {
+        flex-wrap: wrap;
+    }
+    .container .content-area {
+        box-sizing: border-box;
+        flex: 3;
+        margin: 15px;
+    }
+
+    .container .content-area .sidebar {
+        box-sizing: border-box;
+        flex: 1;
+    }
+ }
+
+ @media screen and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+ }
