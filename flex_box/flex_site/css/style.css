@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@700&family=Roboto&display=swap');
 
+:root {
+    --color-back:#ced8e1;
+    --color-dark: #102b3e;
+    --color-content: #6964e2;
+    --font-main: 'Roboto', sans-serif;
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -7,46 +14,66 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-main);
+    background-color: var(--color-back);
 }
 
-/* Navbar*/
+/* Navbar */
 
-#navbar {
+header {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-#navbar .navbar-container {
-    width: 60%;
-    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--color-back);
+    width: 100%;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
 }
 
-#navbar .navbar-container .logo {
-    height: 40px;
-    width: auto;
+header .logo {
+    background-color: var(--color-dark);
+    width: 120px;
+    height: 50px;
+    border-radius: 15px;
 }
 
-#navbar .navbar-container ul {
+header .menu {
     display: flex;
-    list-style: none;
+    flex-direction: column;
+    color: var(--color-content);
+    text-align: center;
+    align-items: center;
+}
+
+header .menu .menu-smll ,
+header .menu .menu-big {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 10px;
+    text-transform: uppercase;
     font-weight: bold;
+    font-size: 1rem;
 }
 
-#navbar .navbar-container ul li {
-    padding: 0 20px;
+header .menu .menu-smll {
+    margin-left: auto;
 }
 
-#navbar .navbar-container ul li:nth-child(3) {
-    border-right: 1px solid white;
+header .menu .menu-smll li a,
+header .menu .menu-big li a {
+    text-decoration: none;
+    color: var(--color-content);
+    padding: 10px;
 }
 
-/* Showcase*/
+header .menu .menu-smll li:hover a ,
+header .menu .menu-big li:hover a {
+    color: var(--color-dark);
+    transition: all 1s linear;
+}
