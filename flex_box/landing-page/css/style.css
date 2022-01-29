@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@700&family=Righteous&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@700&family=Righteous&family=Roboto&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --color-primary: #2F2325;
+    --color-secondary: #8E5D52;
+    --color-tertiary: #FFF2E7;
+    --font-primary: 'Righteous', cursive;
+    --font-secundary: 'Sarala', sans-serif;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, var(--color-primary) 16.62%, var(--color-secondary) 85.61%);
+}
+
+/* Cabecalho */
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 24px 0;
+    border-bottom: 0.4px solid var(--color-tertiary);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);;
+    background: linear-gradient(68.15deg, var(--color-primary) 2%, var(--color-secondary) 85.61%);
+}
+
+.cabecalho .img {
+    width: auto;
+    height: 72px;
+}
+
+.cabecalho .cabecalho-menu {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    gap: 32px;
+}
+
+.cabecalho .cabecalho-menu .cabecalho-menu-item {
+    font-family: var(--font-secundary);
+    color: var(--color-tertiary);
+    font-weight: 400;
+}
+
+.cabecalho .cabecalho-menu .cabecalho-menu-item:hover {
+    color: rgba(236, 214, 196, 0.53);
+    transition: 2s ease;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+}
+
+.conteudo .conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo .conteudo-principal .conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo .conteudo-principal .conteudo-principal-escrito .conteudo-principal-escrito-titulo {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 64px;
+    color: var(--color-tertiary);
+}
+
+.conteudo .conteudo-principal .conteudo-principal-escrito .conteudo-principal-escrito-subtitulo {
+    font-family: var(--font-secundary);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-tertiary);
+}
+
+.conteudo .conteudo-principal .conteudo-principal-escrito .conteudo-principal-escrito-botao {
+    background-color: var(--color-tertiary);
+    width: 180px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    font-family: var(--font-secundary);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-primary);
+}
+
+.conteudo .conteudo-principal .conteudo-principal-escrito .conteudo-principal-escrito-botao:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+    transition: 2s ease;
+}
+
+.conteudo .conteudo-principal .conteudo-principal-escrito .conteudo-principal-escrito-imagem {
+    width: auto;
+    height: 430px;
+}
+
+.conteudo .conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo .conteudo-secundario .conteudo-secundario-titulo {
+    border-top: 0.4px solid var(--color-tertiary);
+    padding-top: 48px;
+    margin-bottom: 16px;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    color: var(--color-tertiary);
+}
+
+.conteudo .conteudo-secundario .conteudo-secundario-paragrafo {
+    font-family: var(--font-secundary);
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--color-tertiary);
+}
+
+.rodape {
+    padding: 32px;
+    border-top: .4px solid var(--color-tertiary);
+}
+
+.rodape .rodape-imagem {
+    max-height: 48px;
+    display: block;
+    margin: 0 auto;
+}
