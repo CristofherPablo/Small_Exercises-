@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display-swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-primary: Poppins, sans-serif;
+    --color-01: #017143;
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header a .logo {
+    width: 80px;
+    margin: 10px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header ul li {
+    display: block;
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    margin-left: 40px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #262626;
+}
+
+/* Main content */ 
+
+main {
+    padding: 20px 100px;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .content .textBox h2 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.3em;
+}
+
+main .content .textBox h2 span {
+    color: var(--color-01);
+    font-weight: 900;
+}
+
+main .content .textBox p {
+    width: 550px;
+}
+
+main .content .textBox 
+
+main .content .imgBox {
+    display: flex;
+    flex-direction: flex-end;
+} 
+
+main .content .imgBox img {
+    width: 400px;
+}
