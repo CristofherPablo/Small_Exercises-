@@ -10,17 +10,20 @@
 </head>
 <body>
 
-    <header>
-        <a href="#"><img src="picture/logo.png" alt="StarBucks oficial logo" class="logo"></a>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">What's New</a></li>
-                <li><a href="#">Conatct</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="picture/logo.png" alt="StarBucks oficial logo" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="#">Conatct</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
 
     <!-- Main Content -->
 
@@ -35,9 +38,31 @@
                 <img src="picture/img1.png" alt="Cups os a green starbucks late" class="starbucks">
             </div>
         </section>
+
+        <ul class="thumb">
+            <li><img src="picture/thumb1.png" onclick="imgSlider('picture/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="picture/thumb2.png" onclick="imgSlider('picture/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="picture/thumb3.png" onclick="imgSlider('picture/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><img src="picture/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="picture/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="picture/instagram.png" alt=""></a></li>
+        </ul>
         
     </main>
 
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
 
     
 </body>
