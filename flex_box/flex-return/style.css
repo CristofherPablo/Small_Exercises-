@@ -1,0 +1,61 @@
+:root {
+  --blue-aqua: #00a9dd;
+  --purple: #604ea0;
+  --orange: #f5a767;
+  --tangerine: #f58634;
+  --deep-blue: #0992be;
+  --white: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  margin: auto;
+  padding: 0px;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+/* First training section  */
+
+.practice-01 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header-1{
+    background-color: var(--blue-aqua);
+    width: 50rem;
+    height: 5rem;
+    
+}
+
+.main-1 {
+    display: flex;
+}
+
+.main-1 article {
+    background-color: var(--purple);
+    flex: 3;
+    height: 30rem;
+}
+
+.main-1 .col-2{
+    background-color: var(--orange);
+    flex: 1;
+}
+
+.main-1 .col-3 {
+    background-color: var(--tangerine);
+    flex: 1;
+}
+
+.footer-1 {
+    background-color: var(--deep-blue);
+    height: 5rem;
+}
