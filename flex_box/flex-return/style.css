@@ -114,7 +114,7 @@ body {
 
 .nav-flex {
     color: black;
-    min-height: 25rem;
+    min-height: 10.5rem;
     min-width: 50rem;
     background: #fff;
     padding: 40px 20px;
@@ -210,3 +210,94 @@ body {
 .nav-flex .facebook li:nth-child(3n) i{
     margin-right: 3px;
 }
+
+.nav-flex .facebook li:hover {
+    color: #dbd8d8;
+}
+
+/* Github navbar copying*/
+
+.nav-flex .github {
+    display: flex;
+    height: 46px;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 5px;
+    background-color: #161b22;
+    color: #fff;
+    font-size: 0.9em;
+    box-shadow: 5px 10px 20px -20px rgba(59, 89, 153, 1);
+}
+
+.nav-flex .github .github__bell {
+    margin-left: auto;
+}
+
+.nav-flex .github .github__brand{
+    font-size: 1.3rem;
+}
+
+.nav-flex .github li:hover{
+    color: #c6cdd4;
+    cursor: pointer;
+}
+
+.nav-flex .github li:not(:last-child):not(.github__search){
+    margin-right: 10px;
+}
+
+.nav-flex .github li:nth-child(9n) i,
+.nav-flex .github li:nth-child(10n) i{
+    margin-left: 3px;
+}
+
+.nav-flex .github .github__search{
+    margin-right: 3px;
+}
+
+/* Medium nav bar */
+
+.nav-flex .medium{
+    display: flex;
+    height: 46px;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 5px;
+    background-color: #ffc017;
+    color: #333;
+    font-size: 0.9em;
+    box-shadow: 5px 10px 20px -20px rgba(59, 89, 153, 1);
+
+}
+
+.nav-flex .medium .about{
+    margin-left: auto;
+}
+
+.nav-flex .medium li:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-flex .medium li:hover{
+    cursor: pointer;
+}
+
+.nav-flex .medium .medium__brand i{
+    margin-right: 3px;
+}
+
+.nav-flex .medium li > button{
+    font-size: .8em;
+    border: 0;
+    background-color: rgb(16, 17, 17);
+    color: #fff;
+    border-radius: 100px;
+    padding: 7px;
+}
+
+.nav-flex .medium li > button:hover{
+    cursor: pointer;
+}
+
