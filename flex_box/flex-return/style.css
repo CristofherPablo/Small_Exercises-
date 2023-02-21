@@ -59,3 +59,154 @@ body {
     background-color: var(--deep-blue);
     height: 5rem;
 }
+
+/* Freecodecamp flexbox learning */
+
+.free-code-camp ul {
+    display: flex;
+    border: solid red;
+    width: 50rem;
+    height: 25rem;
+    padding: 0px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.free-code-camp ul li {
+    background-color: #8cacea;
+    list-style-type: none;
+}
+
+.free-code-camp ul li:nth-child(1){
+    background-color: var(--purple);
+    flex: 3 0 auto;
+}
+
+.free-code-camp ul li:nth-child(2){
+    background-color: var(--orange);
+    flex: 1 0 auto;
+    height: 100px;
+}
+
+.free-code-camp ul li:nth-child(3){
+    background-color: var(--tangerine);
+    flex-grow: 1;
+}
+
+/* Position inside flex */ 
+.position-flex{
+    color: black;
+}
+
+.position-flex ul {
+    display: flex;
+    margin: none;
+}
+
+.position-flex ul li{
+    flex: 1;
+    border: 2px solid red;
+    margin: 2rem;
+    list-style-type: none;
+}
+
+/* Navbars with flexbox execises */
+
+.nav-flex {
+    color: black;
+    min-height: 25rem;
+    min-width: 50rem;
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 55px 50px -20px #b6b6b6; 
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.nav-flex ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+.nav-flex .twitter {
+    display: flex;
+    height: 46px;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 5px;
+    color: rgba(117, 117, 117, 1);
+    box-shadow: 5px 10px 20px -20px rgba(85, 172, 238, 1);
+}
+
+.nav-flex .twitter li {
+    cursor: pointer;
+}
+
+.nav-flex .twitter li:hover{
+    color: rgba(85, 172, 238, 1);
+}
+
+.nav-flex .twitter-bird {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    color: rgba(85, 172, 238, 1);
+}
+
+.nav-flex .twitter li:not(:last-child):not(.twitter-bird){
+    margin-right: 10px;
+}
+
+.nav-flex .twitter li i:not(.fa-twitter):not(.fa-search):not(.fa-user-circle-o){
+    margin-right: 3px;
+}
+
+.nav-flex .twitter li > button {
+    font-size: .8em;
+    border: 0;
+    background-color: rgba(85, 172, 238, 1);
+    color: #fff;
+    border-radius: 100px;
+}
+
+.nav-flex .twitter li > button:hover{
+    background-color: rgba(85, 172, 238, 0.795);
+    cursor: pointer;
+}
+
+/* Facebook navbar */
+
+.nav-flex .facebook {
+    display: flex;
+    height: 46px;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 5px;
+    background-color: rgba(59, 89, 153, 1);
+    color: #fff;
+    font-size: 0.9em;
+    box-shadow: 5px 10px 20px -20px rgba(59, 89, 153, 1);
+}
+
+.nav-flex .facebook .facebook__search{
+    margin-right: auto;
+}
+
+.nav-flex .facebook .facebook__brand {
+    font-size: 1em;
+}
+
+.nav-flex .facebook li:not(:last-child):not(.facebook__search){
+    margin-right: 10px;
+}
+
+.nav-flex .facebook li i{
+    margin-left: 3px;
+}
+
+.nav-flex .facebook li:nth-child(3n) i{
+    margin-right: 3px;
+}
