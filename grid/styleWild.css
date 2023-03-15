@@ -1,0 +1,75 @@
+hotml{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+body, a, img, p, div, nav, li, ul,nav, cite, footer{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+    grid-template-areas: 
+        "head head head"
+        "sidebar main adds"
+        "footer footer footer"
+    ;
+}
+
+/* Header */
+
+.header{
+    grid-area: head;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #8844ee, #b07dfb);;
+}
+.logo{
+    max-width: 200px;
+}
+
+.header nav > ul{
+    display: flex;
+}
+
+.header nav a{
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.1s;
+}
+
+.header nav a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header nav ul li + li{
+    margin-left: 30px;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.main{
+    grid-area: main;
+}
+.adds{
+    grid-area: adds;
+}
+.footer{
+    grid-area: footer;
+}
