@@ -112,6 +112,60 @@ img{
 .span-col{
     grid-column: span 2;
 }
+
+.title h1, .title p{
+    color: #b07dfb;
+}
+
+.title h1{
+    font-size: 4rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.title p{
+    font-size: 0.87rem;
+    font-style: italic;
+}
+
+.characteristics{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.characteristics > div:first-child{
+    margin-right: 30px;
+}
+
+.characteristics > div{
+    width: 80px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #8844ee, #b07dfb);
+    text-align: center;
+    box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+    position: relative;
+}
+
+.characteristics span {
+    display: block;
+}
+
+.characteristics .number{
+    color: #b07dfb;
+    font-size: 3em;
+    line-height: 1;
+    margin: 10px auto;
+}
+
+.characteristics .label{
+    background: white;
+    border-radius: 0 0 5px 5px;
+    color: #b07dfb;
+    padding: 5px 0;
+    position: relative;
+    top: 2px;
+}
+
 .adds{
     grid-area: adds;
     background: #fafbfc;
